@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+<title>旅游数据</title>
+<link rel="stylesheet" type="text/css" href="css/reset.css" />
+<link rel="stylesheet" type="text/css" href="css/scanboard.css" />
+<link rel="stylesheet" type="text/css" href="css/animsition.css" />
+<link rel="stylesheet" type="text/css" href="css/jquery.shCircleLoader.css" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.shCircleLoader-min.js"></script>
+</head>
+<body>
+	<div id="loader"></div>
+	<script type="text/javascript">
+		$('#loader').shCircleLoader({color: "#00deff"});
+	</script>
+	<!--Top Start!-->
+	<div class="scanboardWp animsition">
+		<div id="top">
+			<div class="wp clearfix">
+				<div class="left pageTit ">
+					<a class="summaryBtn topTime" href=""></a>
+				</div>
+				<div class="center topLogo tileaa">
+					
+					    <h1 class="txt">详细</h1>
+					
+				</div>
+				<div class="right topBar">
+
+					<div class="clearfix">
+						<a href="./index.html" class="signOut fr">返回</a>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--Top End!-->
+		
+		<!--Main Start!-->
+		<div id="main" class="wp clearfix">
+			<div class="left">
+				<!--今日运单数量-->
+				<div class="item waybill">
+					<div class="itemTit">
+						<span class="border-yellow">旅游情况占比</span>
+					</div>
+					<div class="itemCon itembg">
+						<div class="progress" progress="1%">
+							<h3 class="clearfix"><span>出国旅游</span><i>3（亿）</i></h3>
+							<div class="progressBar">
+								<span></span>
+							</div>
+							<h4>0.4%</h4>
+						</div>
+						<div class="progress" progress="99.6%">
+							<h3 class="clearfix"><span>国内旅游</span><i>60.7（亿）</i></h3>
+							<div class="progressBar">
+								<span></span>
+							</div>
+							<h4>99%</h4>
+						</div>
+						<div class="progress" progress="10.1%">
+							<h3 class="clearfix"><span>旅游就业</span><i>0.7987（亿）</i></h3>
+			
+				<div class="progressBar">
+								<span></span>
+							</div>
+							<h4>53%</h4>
+						</div>
+					</div>
+				</div>
+
+				<!--各阶段平均用时统计-->
+				<div class="item">
+					<div class="itemTit">
+						<span class="border-green">A级景点统计</span>
+					</div>
+					<div class="itemCon">
+						<ul class="listStyle">
+							<li class="clearfix">
+								<span>5A</span>
+								<span><strong>246</strong>家</span>
+							</li>
+							<li class="clearfix">
+								<span>4A</span>
+								<span><strong>3021</strong>家</span>
+							</li>
+							<li class="clearfix">
+								<span>3A</span>
+								<span><strong>4077</strong>家</span>
+							</li>
+							<li class="clearfix">
+								<span>2A</span>
+								<span><strong>2025</strong>家</span>
+							</li>
+							<li class="clearfix">
+								<span>1A</span>
+								<span><strong>81</strong>家</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<!--人员信息-->
+				<div class="item">
+					<div class="itemTit">
+						<span class="border-blue">景区分类信息</span>
+					</div>
+					<div class="itemCon itembg">
+						<ul class="listStyle">
+							<li class="clearfix">
+								<span>森林景观：<strong>1097</strong>家</span>
+								<span>河湖湿地：<strong>675</strong>家</span>
+								<span>地址遗迹：<strong>731</strong>家</span>
+								<span>古村古镇：<strong>356</strong>家</span>
+								<span>文化遗迹：<strong>942</strong>家</span>
+								<span>文博院馆：<strong>698</strong>家</span>
+								<span>红色旅游：<strong>471</strong>家</span>
+								<span>宗教文化：<strong>447</strong>家</span>
+								<span>主题游乐：<strong>439</strong>家</span>
+								<span>度假休闲：<strong>1616</strong>家</span>
+								<span>乡村旅游：<strong>1122</strong>家</span>
+								<span>城市公园：<strong>186</strong>家</span>
+								<span>商贸旅游：<strong>117</strong>家</span>
+								<span>其他：<strong>553</strong>家</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="center">
+				<div class="centerWp">
+					<!--中间大地图-->
+					<div class="mapContainer">
+						<div class="btnLayer">
+							
+						</div>
+						<div id="myMap" class="item"></div>
+					</div>
+					
+					<!--月运单量统计图-->
+					<div class="billChart">
+						<div class="itemTit">
+							<span class="border-blue">月旅游人数统计<small></small></span>
+						</div>
+						<div id="myChart1"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="right">
+				<!--总计运单数-->
+				<div class="item total itembg">
+					<div class="itemTit">
+						<span class="border-yellow">总收入</span>
+					</div>
+					<div class="itemCon">
+						<div class="totalNum"><strong id="totalNum" total="4339.83">0</strong><span>亿元</span></div>
+					</div>
+				</div>
+
+				<!--基本信息-->
+				<div class="item basicInfo">
+					<div class="itemTit">
+						<span class="border-green">增长率（亿）</span>
+					</div>
+					<div class="itemCon itembg">
+						<div class="infoPie">
+							<ul class="clearfix">
+								<li class="color-yellow">
+									<span class="border-yellow" id="indicator1" total="21.73">0</span>
+									<p>游客接待量</p>
+								</li>
+								<li class="color-green">
+									<span class="border-green" id="indicator2" total="12.48">0</span>
+									<p>收入</p>
+								</li>
+								<li class="color-blue">
+									<span class="border-blue" id="indicator3" total="14.21">0</span>
+									<p>旅游投资</p>
+								</li>
+							</ul>
+							<div id="indicatorContainer"></div>
+						</div>
+					</div>
+				</div>
+
+				<!--运单状态-->
+				<div class="item billState">
+					<div class="itemTit">
+						<span class="border-green">省份全年接待人次收入情况</span>
+					</div>
+					<div class="itemCon">
+						<div class="StateBox">
+							<div class="StateTit">
+								<span>省份</span>
+								<span>接待人数</span>
+								<span>旅游收入</span>
+							</div>
+							<div id="FontScroll">
+								<ul>
+									<li>
+										<div class="fontInner clearfix">
+											<span>青海</span>
+											<span>0.379亿人</span>
+											<span>
+										
+													<div class="progressBar">
+														<span>349.9</span> 
+													</div>
+						
+											</span>
+										</div>
+									</li>
+									<li>
+										<div class="fontInner clearfix">
+											<span>海南</span>
+											<span>7.9亿人</span>
+											<span>
+											
+													<div class="progressBar">
+														<span>6079</span>
+													</div>
+													<h3><i><h4></h4></i></h3>
+		
+											</span>
+										</div>
+									</li>
+									<li>
+										<div class="fontInner clearfix">
+											<span>吉林</span>
+											<span>2.11亿人</span>
+											<span>
+												
+													<div class="progressBar">
+														<span>3274.83</span>
+													</div>
+													<h3><i><h4></h4></i></h3>
+			
+											</span>
+										</div>
+									</li>
+									<li>
+										<div class="fontInner clearfix">
+											<span>西藏</span>
+											<span>0.415亿人</span>
+											<span>
+												
+													<div class="progressBar">
+														<span>441</span>
+													</div>
+													<h3><i><h4></h4></i></h3>
+					
+											</span>
+										</div>
+									</li>
+									<li>
+										<div class="fontInner clearfix">
+											<span>安徽</span>
+											<span>5.8亿人</span>
+											<span>
+							
+													<div class="progressBar">
+														<span>5578</span>
+													</div>
+													<h3><i><h4></h4></i></h3>
+								
+											</span>
+										</div>
+									</li>
+									<li>
+										<div class="fontInner clearfix">
+											<span>海南</span>
+											<span>0.81亿人</span>
+											<span>
+										
+													<div class="progressBar">
+														<span>1384.34</span>
+													</div>
+													<h3><i><h4></h4></i></h3>
+							
+											</span>
+										</div>
+									</li>
+									<li>
+										<div class="fontInner clearfix">
+											<span>黑龙江</span>
+											<span>1.63亿人</span>
+											<span>
+											
+													<div class="progressBar">
+														<span>1345</span>
+													</div>
+													<h3><i><h4></h4></i></h3>
+											
+											</span>
+										</div>
+									</li>
+									<li>
+										<div class="fontInner clearfix">
+											<span>甘肃</span>
+											<span>2.76亿人</span>
+											<span>
+										
+													<div class="progressBar">
+														<span>1842</span>
+													</div>
+													<h3><i><h4></h4></i></h3>
+										
+											</span>
+										</div>
+									</li>
+									<li>
+										<div class="fontInner clearfix">
+											<span>江苏</span>
+											<span>7.1亿人</span>
+											<span>
+												
+													<div class="progressBar">
+														<span>11672.7</span>
+													</div>
+													<h3><i><h4></h4></i></h3>
+											
+											</span>
+										</div>
+									</li>
+									<li>
+										<div class="fontInner clearfix">
+											<span>北京</span>
+											<span>2.6亿人</span>
+											<span>
+											
+													<div class="progressBar">
+														<span>4166.2</span>
+													</div>
+													<h3><i><h4></h4></i></h3>
+											
+											</span>
+										</div>
+									</li>
+									<li>
+										<div class="fontInner clearfix">
+											<span>山东</span>
+											<span>7.3亿人</span>
+											<span>
+												
+													<div class="progressBar">
+														<span> 8278.6</span>
+													</div>
+													<h3><i><h4></h4></i></h3>
+										
+											</span>
+										</div>
+									</li>
+									<li>
+										<div class="fontInner clearfix">
+											<span>内蒙古</span>
+											<span>1.31亿人</span>
+											<span>
+											
+													<div class="progressBar">
+														<span>1460.5</span>
+													</div>
+													<h3><i><h4></h4></i></h3>
+												
+											</span>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--Main End!-->
+	</div>
+
+	<div class="filterbg"></div>
+	<div class="popup">
+		<a href="javascript:;" class="popupClose"></a>
+		<div class="summary">
+			<div class="summaryTop">
+				<div id="summaryPie1" class="summaryPie"></div>
+				<div id="summaryPie2" class="summaryPie"></div>
+				<div id="summaryPie3" class="summaryPie"></div>
+			</div>
+			<div class="summaryBottom">
+				<div class="summaryBar">
+					<div class="summaryTit">
+						<img src="images/tit1.png">
+					</div>
+					<div id="summaryBar"></div>
+				</div>
+				
+				<div class="summaryLine">
+					<div class="summaryTit">
+						<img src="images/tit2.png">
+					</div>
+					<div id="summaryLine"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+			</div>
+		</div>
+	</div>
+	<canvas id="canvas" style="position: absolute;top: 0;left: 0;"></canvas> 
+</body>
+<script type="text/javascript" src="js/bg.js"></script>
+<script type="text/javascript" src="js/scanboard.js"></script>
+<script type="text/javascript" src="js/fontscroll.js"></script>
+<script type="text/javascript" src="js/jquery.animsition.js"></script>
+<script type="text/javascript" src="js/jquery.nicescroll.js"></script>
+<script type="text/javascript" src="js/echarts.min.js"></script>
+<script type="text/javascript" src="http://webapi.amap.com/maps?v=1.4.3&key=f8ffe058b8e6f5b05e8ff43ca4207393"></script>
+</html>
