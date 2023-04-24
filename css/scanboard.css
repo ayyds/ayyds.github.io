@@ -13,6 +13,7 @@
 html,body{
 	height: 100%;
 	overflow: hidden;
+
 }
 body{
 	background: url(../img/55.png);
@@ -80,6 +81,7 @@ body{
 .center{
 	float: left;
 	width: 56%;
+	height: 100%;
 }
 .right{
 	float: right;
@@ -87,7 +89,7 @@ body{
 }
 
 #top{
-	height: 8%;
+	height: 12%;
 	border-bottom: 1px solid #162c52;
 }
 #top .pageTit{
@@ -96,13 +98,13 @@ body{
 }
 #top .pageTit a{
 	display: block;
-	width: 50%;
+	width: 80%;
 	height: 44px;
 	background: url(../images/titBg.png);
 	background-size: 100% 100%;
 	line-height: 44px;
 	text-align: center;
-	font-size: 1px;
+	font-size: 10px;
 	color: #00deff;
 	position: absolute;
 	top: 50%;
@@ -282,6 +284,7 @@ body{
 .billChart .itemTit{
 	border: none;
 	padding-left: 5px;
+	margin-top: 11%;
 }
 #myChart1{
 	height: 220px;
@@ -473,13 +476,7 @@ body{
 
 
 @media screen and (max-width: 1919px) and (min-width: 1680px){
-	#top .pageTit a{
-		height: 40px;
-		line-height: 40px;
-		font-size: 16px;
-		margin-top: -20px;
-		width: 52%;
-	}
+
 	#top .topBar .topTime{
 		padding-top: 16px;
 	}
@@ -605,13 +602,7 @@ body{
 }
 
 @media screen and (max-width: 1679px) and (min-width: 1440px){
-	#top .pageTit a{
-		height: 36px;
-		line-height: 36px;
-		font-size: 15px;
-		margin-top: -18px;
-		width: 54%;
-	}
+
 	#top .topBar .topTime{
 		padding-top: 10px;
 	}
@@ -742,13 +733,7 @@ body{
 }
 
 @media screen and (max-width: 1439px) and (min-width: 1366px){
-	#top .pageTit a{
-		height: 30px;
-		line-height: 30px;
-		font-size: 14px;
-		margin-top: -15px;
-		width: 56%;
-	}
+
 	#top .topBar .topTime{
 		padding-top: 4px;
 		font-size: 1px;
@@ -870,7 +855,7 @@ body{
 		top: -7px;
 	}
 	#FontScroll{
-		height: 128px;
+		height: 184px;
 	}
 
 
@@ -887,18 +872,9 @@ body{
 	.left{
 		width: 24%;
 	}
-	.center{
-		width: 48%;
-	}
+
 	.right{
 		width: 28%;
-	}
-	#top .pageTit a{
-		height: 30px;
-		line-height: 30px;
-		font-size: 12px;
-		margin-top: -15px;
-		width: 60%;
 	}
 	#top .topBar .topTime{
 		padding-top: 4px;
@@ -996,10 +972,10 @@ body{
 		padding-bottom: 8px;
 	}
 	.billState .StateTit{
-		height: 31px;
+		height: 35px;
 	}
 	.billState .StateBox span{
-		height: 31px;
+		height: 33px;
 		line-height: 31px;
 		font-size: 12px;
 	}
@@ -1016,7 +992,7 @@ body{
 		margin-top: 12px;
 	}
 	.billState .progress h3{
-		height: 20px;
+		height: 23px;
 		line-height: 20px;
 		top: -7px;
 	}
@@ -1049,7 +1025,7 @@ body{
 	text-align: center;
 	line-height: 22px;
 	margin-left: 16px;
-	margin-top: 30px;
+	margin-top: 60px;
 }
 /* .signOut:hover{
 	background: #02b6d4;
@@ -1364,19 +1340,7 @@ body{
 	margin: 0 8%;
 	position: relative;
 }
-.infoBox .infoRight .introBox .carImg img{
-	max-width: : 100%;
-	max-height: 64%;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	border-radius: 6px;
-	-webkit-transform: translate(-50%,-50%);
-	-moz-transform: translate(-50%,-50%);
-	-ms-transform: translate(-50%,-50%);
-	-o-transform: translate(-50%,-50%);
-	transform: translate(-50%,-50%);
-}
+
 .infoBox .infoRight .introBox .carText{
 	width: 64%;
 	position: relative;
@@ -1860,14 +1824,15 @@ body{
 
 @media screen and (max-width: 1439px) and (min-width: 1366px){
 	.signOut{
-		height: 16px;
+		height: 18px;
+		text-align: center;
 		padding: 0 8px;
 		border: 1px solid #02b6d4;
 		border-radius: 9px;
 		line-height: 16px;
 		margin-left: 12px;
-		margin-top: 3px;
-		font-size: 12px;
+		margin-top: 25px;
+		font-size: 15px;
 	}
 	.infoBox .infoTop .infoTit{
 		height: 50%;
